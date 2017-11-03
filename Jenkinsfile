@@ -23,8 +23,8 @@ ls '''
     stage('Test') {
       steps {
         echo 'Test'
-        sh '''pwd \
-ls \'''
+        sh '''pwd
+ls'''
       }
     }
   }
