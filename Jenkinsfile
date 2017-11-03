@@ -23,6 +23,8 @@ ls \\'''
     stage('Test') {
       steps {
         echo 'Test'
+        sh '''pwd \\
+ls \\'''
       }
     }
   }
