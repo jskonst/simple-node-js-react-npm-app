@@ -9,13 +9,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''npm install
-cd jenkins
-sh pwd
-sh ls
-cd ../src
-pwd
-ls'''
+        sh 'npm install'
+        echo 'Hello'
       }
     }
   }
