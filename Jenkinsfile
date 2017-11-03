@@ -10,21 +10,21 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Hello'
-        sh '''npm install \\
-pwd \\
-cd jenkins \\
-pwd \\
-ls \\
-cd ../src \\
-pwd \\
-ls \\'''
+        sh '''npm install 
+pwd 
+cd jenkins 
+pwd 
+ls 
+cd ../src 
+pwd 
+ls '''
       }
     }
     stage('Test') {
       steps {
         echo 'Test'
-        sh '''pwd \\
-ls \\'''
+        sh '''pwd \
+ls \'''
       }
     }
   }
