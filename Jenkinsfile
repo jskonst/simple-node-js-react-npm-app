@@ -9,10 +9,10 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''sh \'npm install\'
-sh \'cd jenkins\'
-sh \'pwd\'
-sh \'ls\'
+        sh '''npm install
+cd jenkins
+sh pwd
+sh ls
 cd ../src
 pwd
 ls'''
