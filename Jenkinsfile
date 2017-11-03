@@ -10,8 +10,14 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Hello'
-        sh '''npm install
-pwd'''
+        sh '''npm install \\
+pwd \\
+cd jenkins \\
+pwd \\
+ls \\
+cd ../src \\
+pwd \\
+ls \\'''
       }
     }
     stage('Test') {
