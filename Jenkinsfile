@@ -10,6 +10,8 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Hello'
+        sh '''npm install
+pwd'''
       }
     }
     stage('Test') {
