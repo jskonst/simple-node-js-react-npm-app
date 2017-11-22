@@ -36,6 +36,7 @@ ls
 mv $JAVA_RESULT_NAME ./jvm/$JAVA_RESULT_NAME && 
 rm $JAVA_NAME && 
 export JAVA_HOME=`pwd`/jvm/jdk1.8.0_151/
+export PATH=${PATH}:${JAVA_HOME}/bin
 java -version'''
       }
     }
